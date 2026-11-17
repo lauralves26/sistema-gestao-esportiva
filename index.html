@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Esportiva</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Sistema de Gestão Esportiva</h1>
+        <p>Gerenciamento de modalidades, treinadores e equipes</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarTela('inicio')">Início</button>
+        <button onclick="mostrarTela('modalidades')">Modalidades</button>
+        <button onclick="mostrarTela('treinadores')">Treinadores</button>
+        <button onclick="mostrarTela('equipes')">Equipes</button>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="tela">
+            <h2>Bem-vindo!</h2>
+            <p>
+                 Utilize o sistema para cadastrar e consultar
+                informações esportivas.
+            </p>
+        </section>
+
+        <section id="modalidades" class="tela" hidden>
+            <h2>Cadastro de Modalidades</h2>
+
+            <form id="formModalidade">
+                <input type="text" id="nomeModalidade"
+                       placeholder="Nome da modalidade"
+                       maxlength="80" required>
+
+                <input type="text" id="descricaoModalidade"
+                       placeholder="Descrição"
+                       maxlength="255">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <h3>Modalidades cadastradas</h3>
+            <ul id="listaModalidades"></ul>
+        </section>
+
+        <section id="treinadores" class="tela" hidden>
+            <h2>Cadastro de Treinadores</h2>
+
+            <form id="formTreinador">
+                <input type="text" id="nomeTreinador"
+                       placeholder="Nome do treinador"
+                       maxlength="120" required>
+
+                <input type="text" id="telefoneTreinador"
+                       placeholder="Telefone"
+                       maxlength="20">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <h3>Treinadores cadastrados</h3>
+            <ul id="listaTreinadores"></ul>
+        </section>
+
+        <section id="equipes" class="tela" hidden>
+            <h2>Cadastro de Equipes</h2>
+
+            <form id="formEquipe">
+                <input type="text" id="nomeEquipe"
+                       placeholder="Nome da equipe"
+                       maxlength="100" required>
+
+                <input type="text" id="categoriaEquipe"
+                       placeholder="Categoria"
+                       maxlength="50">
+
+                <label for="modalidadeEquipe">Modalidade:</label>
+                <select id="modalidadeEquipe" required></select>
+
+                <label for="treinadorEquipe">Treinador:</label>
+                <select id="treinadorEquipe" required></select>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <h3>Equipes cadastradas</h3>
+            <ul id="listaEquipes"></ul>
+        </section>
+
+        <p id="mensagem" role="status"></p>
+
+    </main>
+
+    <footer>
+        <p>Projeto escolar - Sistema de Gestão Esportiva</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
