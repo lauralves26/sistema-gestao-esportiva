@@ -1,0 +1,122 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #0b2845;
+    padding: 15px;
+}
+
+nav button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #1d4ed8;
+}
+
+main {
+    max-width: 900px;
+    min-height: 65vh;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.tela {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+.tela[hidden] {
+    display: none;
+}
+
+h2 {
+    color: #123c69;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 25px 0 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form button {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #15803d;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f8fafc;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #123c69;
+    color: white;
+}
